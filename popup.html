@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sell Button Toggle</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212; /* Dark theme background */
+            color: #e0e0e0; /* Light text color */
+            margin: 0;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #bb86fc; /* Highlighted heading */
+        }
+
+        button {
+            background-color: #1f1f1f; /* Dark button background */
+            color: #e0e0e0; /* Light button text */
+            border: 1px solid #3c3c3c; /* Subtle border */
+            border-radius: 10px;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #292929; /* Slightly lighter on hover */
+            border-color: #bb86fc; /* Highlight border on hover */
+            color: #ffffff; /* Bright text on hover */
+            transform: scale(1.02); /* Subtle zoom effect */
+        }
+
+        button:active {
+            transform: scale(0.98); /* Click feedback */
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #7f7f7f; /* Dim footer text */
+        }
+
+        .platform-icon {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Wagmi extension</h3>
+    <button id="togglePhoton">
+        <span class="platform-icon">🌌</span>
+        <span id="photonText">Hide Photon-Sol Sell</span>
+    </button>
+    <button id="toggleBullx">
+        <span class="platform-icon">🐂</span>
+        <span id="bullxText">Hide Bullx Sell</span>
+    </button>
+    <footer>Wagmi Extension v1.2</footer>
+    <script src="popup.js"></script>
+</body>
+</html>
